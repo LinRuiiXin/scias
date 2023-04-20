@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4AC75729F11DF700F52121 /* MineTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC75629F11DF700F52121 /* MineTabView.swift */; };
+		6F4AC75B29F11E1E00F52121 /* CreateTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC75A29F11E1E00F52121 /* CreateTabView.swift */; };
+		6F4AC75E29F11E3900F52121 /* FollowTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC75D29F11E3900F52121 /* FollowTabView.swift */; };
+		6F4AC76129F11E4E00F52121 /* HomePageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC76029F11E4E00F52121 /* HomePageTabView.swift */; };
+		6F4AC76729F120CB00F52121 /* MessageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC76629F120CB00F52121 /* MessageTabView.swift */; };
 		6FF9A83229F0E5D9003E2A9C /* sciasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */; };
 		6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9A83329F0E5D9003E2A9C /* ContentView.swift */; };
 		6FF9A83629F0E5DB003E2A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9A83529F0E5DB003E2A9C /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F4AC75629F11DF700F52121 /* MineTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTabView.swift; sourceTree = "<group>"; };
+		6F4AC75A29F11E1E00F52121 /* CreateTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTabView.swift; sourceTree = "<group>"; };
+		6F4AC75D29F11E3900F52121 /* FollowTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTabView.swift; sourceTree = "<group>"; };
+		6F4AC76029F11E4E00F52121 /* HomePageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabView.swift; sourceTree = "<group>"; };
+		6F4AC76629F120CB00F52121 /* MessageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTabView.swift; sourceTree = "<group>"; };
 		6FF9A82E29F0E5D9003E2A9C /* scias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sciasApp.swift; sourceTree = "<group>"; };
 		6FF9A83329F0E5D9003E2A9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4AC75029F11BA300F52121 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC76529F120B500F52121 /* MessageTab */,
+				6F4AC75529F11DA200F52121 /* MineTab */,
+				6F4AC75429F11D9600F52121 /* CreateTab */,
+				6F4AC75329F11D7500F52121 /* FollowTab */,
+				6F4AC75229F11D4A00F52121 /* HomePageTab */,
+				6FF9A83329F0E5D9003E2A9C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F4AC75229F11D4A00F52121 /* HomePageTab */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC76029F11E4E00F52121 /* HomePageTabView.swift */,
+			);
+			path = HomePageTab;
+			sourceTree = "<group>";
+		};
+		6F4AC75329F11D7500F52121 /* FollowTab */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC75D29F11E3900F52121 /* FollowTabView.swift */,
+			);
+			path = FollowTab;
+			sourceTree = "<group>";
+		};
+		6F4AC75429F11D9600F52121 /* CreateTab */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC75A29F11E1E00F52121 /* CreateTabView.swift */,
+			);
+			path = CreateTab;
+			sourceTree = "<group>";
+		};
+		6F4AC75529F11DA200F52121 /* MineTab */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC75629F11DF700F52121 /* MineTabView.swift */,
+			);
+			path = MineTab;
+			sourceTree = "<group>";
+		};
+		6F4AC76529F120B500F52121 /* MessageTab */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC76629F120CB00F52121 /* MessageTabView.swift */,
+			);
+			path = MessageTab;
+			sourceTree = "<group>";
+		};
+		6F4AC76A29F121EB00F52121 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		6FF9A82529F0E5D9003E2A9C = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +122,9 @@
 		6FF9A83029F0E5D9003E2A9C /* scias */ = {
 			isa = PBXGroup;
 			children = (
+				6F4AC76A29F121EB00F52121 /* Components */,
+				6F4AC75029F11BA300F52121 /* Views */,
 				6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */,
-				6FF9A83329F0E5D9003E2A9C /* ContentView.swift */,
 				6FF9A83529F0E5DB003E2A9C /* Assets.xcassets */,
 				6FF9A83A29F0E5DB003E2A9C /* Info.plist */,
 				6FF9A83729F0E5DB003E2A9C /* Preview Content */,
@@ -138,8 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4AC75B29F11E1E00F52121 /* CreateTabView.swift in Sources */,
+				6F4AC76729F120CB00F52121 /* MessageTabView.swift in Sources */,
 				6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */,
+				6F4AC75729F11DF700F52121 /* MineTabView.swift in Sources */,
 				6FF9A83229F0E5D9003E2A9C /* sciasApp.swift in Sources */,
+				6F4AC76129F11E4E00F52121 /* HomePageTabView.swift in Sources */,
+				6F4AC75E29F11E3900F52121 /* FollowTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
