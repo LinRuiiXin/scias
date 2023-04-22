@@ -41,7 +41,7 @@ struct StartupView: View {
                     .animation(.easeInOut(duration: 0.3))
                     .scaleEffect(finished ? 90 : 0.5)
                     .offset(x: finished ? 40 : 0, y: finished ? 1800 : 0)
-                    .animation(Animation.spring(dampingFraction: 1).speed(0.9).delay(0.3))
+                    .animation(Animation.spring(dampingFraction: 1).speed(1.2).delay(0.3))
                     .opacity(finished ? 0 : 1)
                     .animation(Animation.easeInOut.delay(0.7))
 //                    .onTapGesture{
