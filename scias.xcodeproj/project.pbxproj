@@ -12,6 +12,7 @@
 		6F4AC75E29F11E3900F52121 /* FollowTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC75D29F11E3900F52121 /* FollowTabView.swift */; };
 		6F4AC76129F11E4E00F52121 /* HomePageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC76029F11E4E00F52121 /* HomePageTabView.swift */; };
 		6F4AC76729F120CB00F52121 /* MessageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC76629F120CB00F52121 /* MessageTabView.swift */; };
+		6F4AC77929F22FB700F52121 /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AC77829F22FB700F52121 /* StartupView.swift */; };
 		6FF9A83229F0E5D9003E2A9C /* sciasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */; };
 		6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9A83329F0E5D9003E2A9C /* ContentView.swift */; };
 		6FF9A83629F0E5DB003E2A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9A83529F0E5DB003E2A9C /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		6F4AC75D29F11E3900F52121 /* FollowTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTabView.swift; sourceTree = "<group>"; };
 		6F4AC76029F11E4E00F52121 /* HomePageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabView.swift; sourceTree = "<group>"; };
 		6F4AC76629F120CB00F52121 /* MessageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTabView.swift; sourceTree = "<group>"; };
+		6F4AC77829F22FB700F52121 /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
 		6FF9A82E29F0E5D9003E2A9C /* scias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sciasApp.swift; sourceTree = "<group>"; };
 		6FF9A83329F0E5D9003E2A9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		6F4AC75029F11BA300F52121 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F4AC78429F272AE00F52121 /* Startup */,
 				6F4AC76529F120B500F52121 /* MessageTab */,
 				6F4AC75529F11DA200F52121 /* MineTab */,
 				6F4AC75429F11D9600F52121 /* CreateTab */,
@@ -103,6 +106,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		6F4AC78429F272AE00F52121 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC77829F22FB700F52121 /* StartupView.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		6F4AC78929F277BC00F52121 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6FF9A82529F0E5D9003E2A9C = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +140,7 @@
 		6FF9A83029F0E5D9003E2A9C /* scias */ = {
 			isa = PBXGroup;
 			children = (
+				6F4AC78929F277BC00F52121 /* Resources */,
 				6F4AC76A29F121EB00F52121 /* Components */,
 				6F4AC75029F11BA300F52121 /* Views */,
 				6FF9A83129F0E5D9003E2A9C /* sciasApp.swift */,
@@ -211,6 +230,7 @@
 			files = (
 				6F4AC75B29F11E1E00F52121 /* CreateTabView.swift in Sources */,
 				6F4AC76729F120CB00F52121 /* MessageTabView.swift in Sources */,
+				6F4AC77929F22FB700F52121 /* StartupView.swift in Sources */,
 				6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */,
 				6F4AC75729F11DF700F52121 /* MineTabView.swift in Sources */,
 				6FF9A83229F0E5D9003E2A9C /* sciasApp.swift in Sources */,
