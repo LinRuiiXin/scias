@@ -9,9 +9,9 @@ import SwiftUI
 
 struct StartupView: View {
     
-    @Binding var finished: Bool
+    //    @Binding var finished: Bool
     
-//    @State var finished: Bool
+    @State var finished: Bool
     
     private let backgroundGradient = Gradient(colors: [
         Color(red: 59/255, green: 133/255, blue: 255/255),
@@ -44,9 +44,9 @@ struct StartupView: View {
                     .animation(Animation.spring(dampingFraction: 1).speed(1.2).delay(0.3))
                     .opacity(finished ? 0 : 1)
                     .animation(Animation.easeInOut.delay(0.7))
-//                    .onTapGesture{
-//                        finished.toggle()
-//                    }
+                    .onTapGesture{
+                        finished.toggle()
+                    }
                 
             }
         }
@@ -54,13 +54,16 @@ struct StartupView: View {
     }
 }
 
+
+//struct StratupView_Previews: PreviewProvider {
+//    @State static var finished = false
+//    static var previews: some View {
+//        return StartupView(finished: $finished)
+//    }
+//}
+
 struct StratupView_Previews: PreviewProvider {
-    @State static var finished = false
     static var previews: some View {
-        return StartupView(finished: $finished)
-            .onTapGesture {
-                finished.toggle()
-            }
-//        return StartupView(finished: false)
+        return StartupView(finished: false)
     }
 }

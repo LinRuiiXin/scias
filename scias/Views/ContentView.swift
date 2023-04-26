@@ -23,13 +23,13 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            StartupView(finished: $finished)
-                .zIndex(1.0)
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        finished = true
-                    }
-                }
+//            StartupView(finished: $finished)
+//                .zIndex(1.0)
+//                .onAppear {
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                        finished = true
+//                    }
+//                }
             TabView(selection: $selection) {
                 HomePageTabView()
                     .tabItem { Image(systemName: "house") }
