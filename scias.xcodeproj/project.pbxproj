@@ -17,6 +17,8 @@
 		6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9A83329F0E5D9003E2A9C /* ContentView.swift */; };
 		6FF9A83629F0E5DB003E2A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9A83529F0E5DB003E2A9C /* Assets.xcassets */; };
 		6FF9A83929F0E5DB003E2A9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9A83829F0E5DB003E2A9C /* Preview Assets.xcassets */; };
+		6FFBD64D29F8D7DF00FE6718 /* LogoPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFBD64C29F8D7DF00FE6718 /* LogoPath.swift */; };
+		6FFBD65229F9122600FE6718 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFBD65129F9122600FE6718 /* TabsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6FF9A83529F0E5DB003E2A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF9A83829F0E5DB003E2A9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FF9A83A29F0E5DB003E2A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FFBD64C29F8D7DF00FE6718 /* LogoPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoPath.swift; sourceTree = "<group>"; };
+		6FFBD65129F9122600FE6718 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,12 +52,8 @@
 		6F4AC75029F11BA300F52121 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FFBD65029F9121000FE6718 /* Tabs */,
 				6F4AC78429F272AE00F52121 /* Startup */,
-				6F4AC76529F120B500F52121 /* MessageTab */,
-				6F4AC75529F11DA200F52121 /* MineTab */,
-				6F4AC75429F11D9600F52121 /* CreateTab */,
-				6F4AC75329F11D7500F52121 /* FollowTab */,
-				6F4AC75229F11D4A00F52121 /* HomePageTab */,
 				6FF9A83329F0E5D9003E2A9C /* ContentView.swift */,
 			);
 			path = Views;
@@ -110,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6F4AC77829F22FB700F52121 /* StartupView.swift */,
+				6FFBD64C29F8D7DF00FE6718 /* LogoPath.swift */,
 			);
 			path = Startup;
 			sourceTree = "<group>";
@@ -157,6 +158,19 @@
 				6FF9A83829F0E5DB003E2A9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6FFBD65029F9121000FE6718 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				6F4AC76529F120B500F52121 /* MessageTab */,
+				6F4AC75529F11DA200F52121 /* MineTab */,
+				6F4AC75429F11D9600F52121 /* CreateTab */,
+				6F4AC75329F11D7500F52121 /* FollowTab */,
+				6F4AC75229F11D4A00F52121 /* HomePageTab */,
+				6FFBD65129F9122600FE6718 /* TabsView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +246,10 @@
 				6F4AC76729F120CB00F52121 /* MessageTabView.swift in Sources */,
 				6F4AC77929F22FB700F52121 /* StartupView.swift in Sources */,
 				6FF9A83429F0E5D9003E2A9C /* ContentView.swift in Sources */,
+				6FFBD65229F9122600FE6718 /* TabsView.swift in Sources */,
 				6F4AC75729F11DF700F52121 /* MineTabView.swift in Sources */,
 				6FF9A83229F0E5D9003E2A9C /* sciasApp.swift in Sources */,
+				6FFBD64D29F8D7DF00FE6718 /* LogoPath.swift in Sources */,
 				6F4AC76129F11E4E00F52121 /* HomePageTabView.swift in Sources */,
 				6F4AC75E29F11E3900F52121 /* FollowTabView.swift in Sources */,
 			);

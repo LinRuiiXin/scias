@@ -11,49 +11,42 @@ struct StartupView: View {
     
     //    @Binding var finished: Bool
     
-    @State var finished: Bool
+    @State var finished: Bool = false
     
     private let backgroundGradient = Gradient(colors: [
         Color(red: 59/255, green: 133/255, blue: 255/255),
         Color(red: 95/255, green: 204/255, blue: 200/255)
     ])
     
-    private let backgroundGradientTransparency = Gradient(colors: [
-        Color(red: 255, green: 255, blue: 255, opacity: 0),
-        Color(red: 255, green: 255, blue: 255, opacity: 0)
-    ])
-    
     
     var body: some View {
-        GeometryReader { proxy in
+        ZStack {
+            LinearGradient(
+                gradient: backgroundGradient,
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing)
             ZStack {
-                LinearGradient(
-                    gradient: backgroundGradient,
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing)
+                Color.white.zIndex(1)
                     .opacity(finished ? 0 : 1)
-                    .animation(Animation.easeInOut(duration: 0.01).delay(0.7))
-                Image("scias")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                    .scaleEffect(finished ? 0.5 : 1)
-                    .animation(.easeInOut(duration: 0.3))
-                    .scaleEffect(finished ? 90 : 0.5)
-                    .offset(x: finished ? 40 : 0, y: finished ? 1800 : 0)
-                    .animation(Animation.spring(dampingFraction: 1).speed(1.2).delay(0.3))
-                    .opacity(finished ? 0 : 1)
-                    .animation(Animation.easeInOut.delay(0.7))
-                    .onTapGesture{
-                        finished.toggle()
-                    }
-                
+                    .animation(Animation.easeInOut(duration: 0.1).delay(0.2))
+                TabsView(finished: $finished)
+                    
             }
+            .mask(
+                LogoPath()
+                    .scaleEffect(finished ? 0.8 : 1)
+                    .animation(Animation.easeInOut(duration: 0.2))
+                    .scaleEffect(finished ? 140 : 0.8)
+                    .animation(Animation.spring(dampingFraction: 1.2).speed(1).delay(0.2))
+                    .offset(x:finished ? 80 : 0, y: finished ? 1890 : 0)
+                    .animation(Animation.easeInOut.delay(0.2))
+            )
+            
         }
         .ignoresSafeArea()
     }
+    
 }
-
 
 //struct StratupView_Previews: PreviewProvider {
 //    @State static var finished = false
@@ -64,6 +57,6 @@ struct StartupView: View {
 
 struct StratupView_Previews: PreviewProvider {
     static var previews: some View {
-        return StartupView(finished: false)
+        return StartupView()
     }
 }
