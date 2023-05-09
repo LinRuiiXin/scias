@@ -28,7 +28,7 @@ struct TabsView: View {
                 .tag(Tab.HomePage)
             
             FollowTabView()
-                .tabItem { Image(systemName: "checkmark.seal") }
+                .tabItem { Image(systemName: "moon.stars") }
                 .tag(Tab.Follow)
             
             CreateTabView()

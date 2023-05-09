@@ -36,9 +36,10 @@ struct StartupView: View {
                 LogoPath()
                     .scaleEffect(finished ? 0.8 : 1)
                     .animation(Animation.easeInOut(duration: 0.2))
-                    .scaleEffect(finished ? 140 : 0.8)
+                    .scaleEffect(finished ? 160 : 0.8)
+//                    .transition(.slide)
                     .animation(Animation.spring(dampingFraction: 1.2).speed(1).delay(0.2))
-                    .offset(x:finished ? 80 : 0, y: finished ? 1890 : 0)
+                    .offset(x:finished ? 80 : 0, y: finished ? 2200 : 0)
                     .animation(Animation.easeInOut.delay(0.2))
             )
             
